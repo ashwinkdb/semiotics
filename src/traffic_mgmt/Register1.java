@@ -198,7 +198,7 @@ public class Register1 extends javax.swing.JFrame {
             Class.forName("java.sql.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/traffic", "root", "help");
             Statement stmt = conn.createStatement();
-            String Query="insert into register(emp,id,dob,addr,mob,res_mob,gmai)values('"+t1.getText()+"','"+t2.getText()+"','"+t3.getText()+"','"+t4.getText()+"','"+t5.getText()+"','"+t6.getText()+"','"+t7.getText()+"');";
+            String Query="insert into register(emp,id,dob,addr,mob,res_mob,gmai,uni_id,pass)values('"+t1.getText()+"','"+t2.getText()+"','"+t3.getText()+"','"+t4.getText()+"','"+t5.getText()+"','"+t6.getText()+"','"+t7.getText()+"','"+uni+"','"+pa+"');";
             stmt.executeUpdate(Query);
             JOptionPane.showMessageDialog(this,"YOUR DATA IS SUCESSFULLY SUBMITTED\nYour Unique Id id  "+uni+"\nYour Password is "+pa+"\nKEEP IT SECURE" );
             Com_your_profile fra = new Com_your_profile(uni);

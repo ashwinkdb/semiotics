@@ -23,6 +23,10 @@ public class Profile extends javax.swing.JFrame {
     public Profile() {
         initComponents();
     }
+   public Profile(String parad) {
+        initComponents();
+        ll.setText(parad);
+    }
 
     /** This method is called from within the constructor to
      * initialize the form.
@@ -47,8 +51,11 @@ public class Profile extends javax.swing.JFrame {
         l5 = new javax.swing.JLabel();
         l4 = new javax.swing.JLabel();
         l3 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
+        l2 = new javax.swing.JLabel();
+        l6 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        p2 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
@@ -57,13 +64,13 @@ public class Profile extends javax.swing.JFrame {
         l9 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         l10 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        ta = new javax.swing.JTextArea();
         jLabel12 = new javax.swing.JLabel();
-        l2 = new javax.swing.JLabel();
-        l6 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
 
         jLabel11.setText("jLabel11");
 
@@ -71,19 +78,85 @@ public class Profile extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel1.setText("UNIQUE ID: ");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(30, 40, 69, 16);
+        jLabel1.setBounds(30, 40, 110, 22);
 
+        ll.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         ll.setText("324234");
         jPanel1.add(ll);
-        ll.setBounds(160, 40, 42, 16);
+        ll.setBounds(140, 30, 130, 40);
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel4.setText("Mobile");
         jPanel1.add(jLabel4);
         jLabel4.setBounds(100, 310, 230, 20);
 
+        String uni = ll.getText();
+        try{
+            Class.forName("java.sql.Driver");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/traffic","root","help");
+            Statement stmt = con.createStatement();
+            String  quer = "Select emp,id,mob,gmai,res_mob,veh_no FROM register WHERE uni_id='"+uni+"';";
+            ResultSet rs = stmt.executeQuery(quer);
+            while(rs.next())
+            {String nam = rs.getString("emp");
+                String id = rs.getString("id");
+                String mob = rs.getString("mob");
+                String gm = rs.getString("gmai");
+                String res = rs.getString("res_mob");
+                String veh = rs.getString("veh_no");
+                l1.setText(nam);
+                l2.setText(id);
+                l3.setText(mob);
+                l4.setText(gm);
+                l5.setText(res);
+                l6.setText(veh);
+
+            }
+        }
+
+        catch(Exception e )
+        {JOptionPane.showMessageDialog(null,e.getMessage());}
+
+        int i;
+
+        try{
+            Class.forName("java.sql.Driver");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/traffic","root","help");
+            Statement stmt = con.createStatement();
+            String qu = "Select mem1 , mem2 ,mem3 ,veh_no,comp FROM grp WHERE mem1 = '"+uni+"' OR mem2 ='"+uni+"' OR mem3='"+uni+"';";
+            ResultSet rs = stmt.executeQuery(qu);
+            if(rs.next())
+            {
+                String m1 = rs.getString("mem1");
+                String m2 = rs.getString("mem2");
+                String m3 = rs.getString("mem3");
+                String v_n = rs.getString("veh_no");
+                String comp= rs.getString("comp");
+                l7.setText(m1);
+                l8.setText(m2);
+                l9.setText(m3);
+                l10.setText(v_n);
+                jLabel13.setText(comp);
+                jLabel15.setVisible(true);
+                jLabel16.setVisible(true);
+                jLabel17.setVisible(true);
+                jLabel13.setVisible(true);
+                jLabel2.setVisible(true);
+                jLabel10.setVisible(true);
+                jLabel12.setVisible(true);
+                l7.setVisible(true);
+                l8.setVisible(true);
+                l9.setVisible(true);
+                l10.setVisible(true);jLabel9.setVisible(false);
+            }
+            else {}
+        }
+
+        catch(Exception e)
+        {JOptionPane.showMessageDialog(null,e.getMessage());}
         jLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel3.setText("Name");
         jPanel1.add(jLabel3);
@@ -107,129 +180,107 @@ public class Profile extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel8.setText("Residence Mobile No.");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(100, 450, 340, 20);
-
-        l1.setText("e");
+        jLabel8.setBounds(100, 440, 340, 30);
         jPanel1.add(l1);
         l1.setBounds(460, 160, 210, 30);
-
-        l5.setText("e");
         jPanel1.add(l5);
         l5.setBounds(460, 450, 210, 30);
-
-        l4.setText("e");
         jPanel1.add(l4);
         l4.setBounds(460, 370, 210, 30);
-
-        l3.setText("e");
         jPanel1.add(l3);
         l3.setBounds(460, 300, 210, 30);
-
-        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel2.setLayout(null);
-
-        jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        jLabel15.setText("Ist Person");
-
-        jLabel16.setText("2nd Person");
-
-        jLabel17.setText("3rd Person");
-
-        l7.setText("65");
-
-        l8.setText("65");
-
-        l9.setText("65");
-
-        jLabel2.setText("Vehicle Number");
-
-        jLabel10.setText("Parking Slot");
-
-        ta.setColumns(20);
-        ta.setRows(5);
-        jScrollPane1.setViewportView(ta);
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel15)
-                            .addComponent(jLabel17)
-                            .addComponent(jLabel16)
-                            .addComponent(jLabel10))
-                        .addGap(41, 41, 41)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10))
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(l9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(l8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(l7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-                                .addComponent(l10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap())
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(l7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel15))
-                .addGap(60, 60, 60)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16)
-                    .addComponent(l8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(66, 66, 66)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel17)
-                    .addComponent(l9, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(73, 73, 73)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(l10, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(51, 51, 51)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel10)
-                        .addGap(61, 61, 61))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
-        );
-
-        jPanel2.add(jPanel3);
-        jPanel3.setBounds(10, 10, 300, 440);
-
-        jLabel12.setText("No Group Found !!");
-        jPanel2.add(jLabel12);
-        jLabel12.setBounds(0, 120, 280, 100);
-
-        jPanel1.add(jPanel2);
-        jPanel2.setBounds(740, 120, 320, 460);
-
-        l2.setText("e");
         jPanel1.add(l2);
         l2.setBounds(460, 230, 210, 30);
-
-        l6.setText("e");
         jPanel1.add(l6);
         l6.setBounds(460, 520, 210, 30);
 
-        jButton1.setText("jButton1");
+        jButton1.setText("LOAD DATA");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(450, 30, 79, 50);
+        jButton1.setBounds(420, 30, 180, 50);
+
+        p2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        p2.setLayout(null);
+
+        jLabel13.setVisible(false);
+        p2.add(jLabel13);
+        jLabel13.setBounds(20, 380, 300, 20);
+
+        jLabel15.setVisible(false);
+        jLabel15.setText("Ist Person");
+        p2.add(jLabel15);
+        jLabel15.setBounds(20, 40, 57, 16);
+
+        jLabel16.setVisible(false);
+        jLabel16.setText("2nd Person");
+        p2.add(jLabel16);
+        jLabel16.setBounds(20, 110, 64, 16);
+
+        jLabel17.setVisible(false);
+        jLabel17.setText("3rd Person");
+        p2.add(jLabel17);
+        jLabel17.setBounds(20, 180, 62, 16);
+
+        l7.setVisible(false);
+        l7.setText("65");
+        p2.add(l7);
+        l7.setBounds(164, 40, 130, 16);
+
+        l8.setVisible(false);
+        l8.setText("65");
+        p2.add(l8);
+        l8.setBounds(164, 110, 130, 16);
+
+        l9.setVisible(false);
+        l9.setText("65");
+        p2.add(l9);
+        l9.setBounds(164, 180, 130, 16);
+
+        jLabel2.setVisible(false);
+        jLabel2.setText("Vehicle Number");
+        p2.add(jLabel2);
+        jLabel2.setBounds(20, 260, 90, 16);
+
+        l10.setVisible(false);
+        p2.add(l10);
+        l10.setBounds(160, 260, 160, 20);
+
+        jLabel9.setVisible(true);
+        jLabel9.setText("No Group Found!!!!!");
+        p2.add(jLabel9);
+        jLabel9.setBounds(110, 150, 130, 120);
+
+        jLabel10.setVisible(false);
+        jLabel10.setText("Parking Slot :");
+        p2.add(jLabel10);
+        jLabel10.setBounds(20, 350, 110, 16);
+
+        jLabel12.setText("No Group Found !!");
+        p2.add(jLabel12);
+        jLabel12.setBounds(750, 40, 280, 100);
+
+        jPanel1.add(p2);
+        p2.setBounds(730, 110, 340, 510);
+
+        jButton2.setText("Update Personal Details");
+        jPanel1.add(jButton2);
+        jButton2.setBounds(340, 665, 180, 40);
+
+        jButton3.setText("Create Group");
+        jPanel1.add(jButton3);
+        jButton3.setBounds(70, 660, 150, 40);
+
+        jButton4.setText("Update Vehicle Details");
+        jPanel1.add(jButton4);
+        jButton4.setBounds(630, 665, 180, 40);
+
+        jButton5.setText("Delete My Account");
+        jPanel1.add(jButton5);
+        jButton5.setBounds(929, 665, 150, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -239,7 +290,7 @@ public class Profile extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 668, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 747, Short.MAX_VALUE)
         );
 
         pack();
@@ -267,14 +318,13 @@ l4.setText(gm);
 l5.setText(res);
 l6.setText(veh);
 
-
 }
 }
 
 catch(Exception e )
 {JOptionPane.showMessageDialog(null,e.getMessage());}
 
-
+int i;
 
 try{
 Class.forName("java.sql.Driver");
@@ -283,7 +333,7 @@ Statement stmt = con.createStatement();
 String qu = "Select mem1 , mem2 ,mem3 ,veh_no,comp FROM grp WHERE mem1 = '"+uni+"' OR mem2 ='"+uni+"' OR mem3='"+uni+"';";
 ResultSet rs = stmt.executeQuery(qu);
 if(rs.next())
-{jPanel3.setVisible(true);
+{
 String m1 = rs.getString("mem1");
 String m2 = rs.getString("mem2");
 String m3 = rs.getString("mem3");
@@ -293,10 +343,20 @@ l7.setText(m1);
 l8.setText(m2);
 l9.setText(m3);
 l10.setText(v_n);
-ta.setText(comp);
-
+jLabel13.setText(comp);
+jLabel15.setVisible(true);
+jLabel16.setVisible(true);
+jLabel17.setVisible(true);
+jLabel13.setVisible(true);
+jLabel2.setVisible(true);
+jLabel10.setVisible(true);
+jLabel12.setVisible(true);
+l7.setVisible(true);
+l8.setVisible(true);
+l9.setVisible(true);
+l10.setVisible(true);
 }
-else {jPanel2.setVisible(true);}
+else {jLabel9.setVisible(true);}
 }
 
 catch(Exception e)
@@ -319,10 +379,15 @@ catch(Exception e)
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -333,10 +398,8 @@ catch(Exception e)
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel l1;
     private javax.swing.JLabel l10;
     private javax.swing.JLabel l2;
@@ -348,7 +411,7 @@ catch(Exception e)
     private javax.swing.JLabel l8;
     private javax.swing.JLabel l9;
     private javax.swing.JLabel ll;
-    private javax.swing.JTextArea ta;
+    private javax.swing.JPanel p2;
     // End of variables declaration//GEN-END:variables
 
 }

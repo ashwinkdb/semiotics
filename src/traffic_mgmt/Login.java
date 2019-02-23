@@ -128,13 +128,13 @@ this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-String a =t1.getText();
+String uni   =t1.getText();
 String pa = new String(p1.getPassword());
 try{
         Class.forName("java.sql.Driver");
         Connection  con = DriverManager.getConnection("jdbc:mysql://localhost/traffic","root","help");
         Statement stmt = con.createStatement();
-        String sql = "SELECT pass FROM register WHERE uni_id = '"+a+"';";
+        String sql = "SELECT pass FROM register WHERE uni_id = '"+uni+"';";
         ResultSet rs = stmt.executeQuery(sql);
         
         if(rs.next())
@@ -142,7 +142,8 @@ try{
             String v = rs.getString("pass");
             if(v.equals(pa)){
                 JOptionPane.showMessageDialog(null,"Login Successfully");
-             Profile fram = new Profile();
+          String hh =t1.getText();
+        Profile fram = new Profile(uni);
             fram.setVisible(true);
             this.setVisible(false);
             }
@@ -162,6 +163,8 @@ catch(Exception e )
     {
         JOptionPane.showMessageDialog(null,e.getMessage());
     }
+
+
 
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed

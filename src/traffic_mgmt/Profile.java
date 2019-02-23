@@ -84,7 +84,7 @@ public class Profile extends javax.swing.JFrame {
         jLabel1.setBounds(30, 40, 110, 22);
 
         ll.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        ll.setText("324234");
+        ll.setText("AN67389797");
         jPanel1.add(ll);
         ll.setBounds(140, 30, 130, 40);
 
@@ -93,70 +93,6 @@ public class Profile extends javax.swing.JFrame {
         jPanel1.add(jLabel4);
         jLabel4.setBounds(100, 310, 230, 20);
 
-        String uni = ll.getText();
-        try{
-            Class.forName("java.sql.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/traffic","root","help");
-            Statement stmt = con.createStatement();
-            String  quer = "Select emp,id,mob,gmai,res_mob,veh_no FROM register WHERE uni_id='"+uni+"';";
-            ResultSet rs = stmt.executeQuery(quer);
-            while(rs.next())
-            {String nam = rs.getString("emp");
-                String id = rs.getString("id");
-                String mob = rs.getString("mob");
-                String gm = rs.getString("gmai");
-                String res = rs.getString("res_mob");
-                String veh = rs.getString("veh_no");
-                l1.setText(nam);
-                l2.setText(id);
-                l3.setText(mob);
-                l4.setText(gm);
-                l5.setText(res);
-                l6.setText(veh);
-
-            }
-        }
-
-        catch(Exception e )
-        {JOptionPane.showMessageDialog(null,e.getMessage());}
-
-        int i;
-
-        try{
-            Class.forName("java.sql.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost/traffic","root","help");
-            Statement stmt = con.createStatement();
-            String qu = "Select mem1 , mem2 ,mem3 ,veh_no,comp FROM grp WHERE mem1 = '"+uni+"' OR mem2 ='"+uni+"' OR mem3='"+uni+"';";
-            ResultSet rs = stmt.executeQuery(qu);
-            if(rs.next())
-            {
-                String m1 = rs.getString("mem1");
-                String m2 = rs.getString("mem2");
-                String m3 = rs.getString("mem3");
-                String v_n = rs.getString("veh_no");
-                String comp= rs.getString("comp");
-                l7.setText(m1);
-                l8.setText(m2);
-                l9.setText(m3);
-                l10.setText(v_n);
-                jLabel13.setText(comp);
-                jLabel15.setVisible(true);
-                jLabel16.setVisible(true);
-                jLabel17.setVisible(true);
-                jLabel13.setVisible(true);
-                jLabel2.setVisible(true);
-                jLabel10.setVisible(true);
-                jLabel12.setVisible(true);
-                l7.setVisible(true);
-                l8.setVisible(true);
-                l9.setVisible(true);
-                l10.setVisible(true);jLabel9.setVisible(false);
-            }
-            else {}
-        }
-
-        catch(Exception e)
-        {JOptionPane.showMessageDialog(null,e.getMessage());}
         jLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel3.setText("Name");
         jPanel1.add(jLabel3);

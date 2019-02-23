@@ -73,12 +73,12 @@ public class Com_your_profile extends javax.swing.JFrame {
         jPanel1.add(t2);
         t2.setBounds(790, 230, 120, 30);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Arial", 0, 18));
         jLabel3.setText("Complete Your Profile");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(20, 20, 200, 20);
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel4.setText("Dropping Pincode");
         jPanel1.add(jLabel4);
         jLabel4.setBounds(40, 530, 250, 20);
@@ -87,32 +87,32 @@ public class Com_your_profile extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 913, 58);
 
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel5.setText("Company Name");
         jPanel1.add(jLabel5);
         jLabel5.setBounds(40, 160, 250, 30);
 
-        jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel6.setText("Working Timings (HH:MM:SS)");
         jPanel1.add(jLabel6);
         jLabel6.setBounds(40, 230, 350, 40);
 
-        jLabel7.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel7.setText("Vehicle Name");
         jPanel1.add(jLabel7);
         jLabel7.setBounds(40, 310, 160, 20);
 
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel8.setText("Vehicle Registration No.");
         jPanel1.add(jLabel8);
         jLabel8.setBounds(40, 380, 280, 30);
 
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel9.setText("Pickup Pincode");
         jPanel1.add(jLabel9);
         jLabel9.setBounds(40, 450, 250, 30);
 
-        jLabel10.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Arial", 1, 14));
         jLabel10.setText("to");
         jPanel1.add(jLabel10);
         jLabel10.setBounds(730, 240, 30, 17);
@@ -146,9 +146,9 @@ public class Com_your_profile extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton3);
-        jButton3.setBounds(510, 650, 77, 40);
+        jButton3.setBounds(490, 650, 110, 50);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel2.setText("UNIQUE ID:");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(30, 80, 130, 30);
@@ -204,7 +204,10 @@ stmt.executeUpdate(qer);
 stmt.executeUpdate(aqer);
 stmt.executeUpdate(qder);
 JOptionPane.showMessageDialog(null,"Data updated successfully");
-
+String vv = l1.getText();
+Profile nn = new Profile(vv);
+nn.setVisible(true);
+this.setVisible(false);
 
 }
 catch(Exception e)

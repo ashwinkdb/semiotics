@@ -68,6 +68,7 @@ public class Profile extends javax.swing.JFrame {
         t4 = new javax.swing.JTextField();
         t5 = new javax.swing.JTextField();
         t6 = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
 
         jLabel11.setText("jLabel11");
 
@@ -81,7 +82,7 @@ public class Profile extends javax.swing.JFrame {
         jLabel1.setBounds(30, 40, 110, 22);
 
         ll.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        ll.setText("324234");
+        ll.setText("T322138979");
         jPanel1.add(ll);
         ll.setBounds(140, 30, 130, 40);
 
@@ -189,7 +190,7 @@ public class Profile extends javax.swing.JFrame {
         jLabel13.setVisible(false);
         jLabel13.setText("ee");
         jPanel1.add(jLabel13);
-        jLabel13.setBounds(740, 520, 300, 20);
+        jLabel13.setBounds(740, 480, 310, 20);
 
         String uni = ll.getText();
         try{
@@ -256,18 +257,34 @@ public class Profile extends javax.swing.JFrame {
 
         catch(Exception e)
         {JOptionPane.showMessageDialog(null,e.getMessage());}
+        t1.setEditable(false);
         jPanel1.add(t1);
         t1.setBounds(410, 170, 230, 30);
+
+        t2.setEditable(false);
         jPanel1.add(t2);
         t2.setBounds(410, 230, 230, 30);
+
+        t3.setEditable(false);
         jPanel1.add(t3);
         t3.setBounds(410, 300, 230, 30);
+
+        t4.setEditable(false);
         jPanel1.add(t4);
         t4.setBounds(410, 370, 230, 30);
+
+        t5.setEditable(false);
         jPanel1.add(t5);
         t5.setBounds(410, 440, 230, 30);
+
+        t6.setEditable(false);
         jPanel1.add(t6);
         t6.setBounds(410, 510, 230, 30);
+
+        jLabel12.setFont(new java.awt.Font("Arial", 1, 30)); // NOI18N
+        jLabel12.setText("Profile");
+        jPanel1.add(jLabel12);
+        jLabel12.setBounds(480, 60, 110, 60);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -310,6 +327,7 @@ String uni = ll.getText();
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;

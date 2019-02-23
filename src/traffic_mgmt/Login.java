@@ -143,7 +143,7 @@ try{
             if(v.equals(pa)){
                 JOptionPane.showMessageDialog(null,"Login Successfully");
           String hh =t1.getText();
-        Profile fram = new Profile(uni);
+        Profile fram = new Profile (uni);
             fram.setVisible(true);
             this.setVisible(false);
             }

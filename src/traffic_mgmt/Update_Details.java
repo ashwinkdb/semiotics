@@ -10,7 +10,8 @@
  */
 
 package traffic_mgmt;
-
+import java.sql.*;
+import javax.swing.JOptionPane;
 /**
  *
  * @author HP
@@ -21,6 +22,11 @@ public class Update_Details extends javax.swing.JFrame {
     public Update_Details() {
         initComponents();
     }
+public Update_Details(String para)
+{
+initComponents();
+l1.setText(para);
+}
 
     /** This method is called from within the constructor to
      * initialize the form.
@@ -36,7 +42,7 @@ public class Update_Details extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         t1 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        l1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -55,7 +61,7 @@ public class Update_Details extends javax.swing.JFrame {
 
         jLabel3.setText("Unique Id :");
 
-        jLabel4.setText("jLabel4");
+        l1.setText("jLabel4");
 
         jButton1.setText("Sumbit");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -86,7 +92,7 @@ public class Update_Details extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(t1, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(t2, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(l1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(174, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -95,7 +101,7 @@ public class Update_Details extends javax.swing.JFrame {
                 .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
+                    .addComponent(l1))
                 .addGap(85, 85, 85)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -116,7 +122,7 @@ public class Update_Details extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String a = jLabel4.getText();
+        String a = l1.getText();
         String b = t1.getText();
         String c = t2.getText();
         try{
@@ -151,7 +157,7 @@ public class Update_Details extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel l1;
     private javax.swing.JTextField t1;
     private javax.swing.JTextField t2;
     // End of variables declaration//GEN-END:variables

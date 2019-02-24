@@ -22,7 +22,7 @@ public class Com_your_profile extends javax.swing.JFrame {
 
     /** Creates new form Com_your_profile */
     public Com_your_profile() {
-        initComponents();
+        initComponents();this.setLocationRelativeTo(null); 
     }
     public Com_your_profile(String para) {
         initComponents();

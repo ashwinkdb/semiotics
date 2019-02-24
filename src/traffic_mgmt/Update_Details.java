@@ -20,7 +20,8 @@ public class Update_Details extends javax.swing.JFrame {
 
     /** Creates new form Update_Details */
     public Update_Details() {
-        initComponents();this.setLocationRelativeTo(null); 
+        initComponents();
+        this.setLocationRelativeTo(null);
     }
 public Update_Details(String para)
 {

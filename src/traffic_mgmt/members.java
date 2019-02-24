@@ -69,7 +69,7 @@ public class members extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Name", "Employee ID", "Mobile No.", "Start Time", "End Time"
+                "Name", "UNIQUE ID", "Mobile No.", "Start Time", "End Time"
             }
         ));
         jScrollPane1.setViewportView(t);
@@ -185,13 +185,13 @@ public class members extends javax.swing.JFrame {
     Class.forName("java.sql.Driver");
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/traffic", "root", "help");
     Statement stmt = conn.createStatement();
-    String sql="SELECT emp,id,mob,st_time,en_time,addr,compa FROM register WHERE pick='"+t1.getText()+"'AND dro='"+t2.getText()+"';";
+    String sql="SELECT emp,uni_id,mob,st_time,en_time,addr,compa FROM register WHERE pick='"+t1.getText()+"'AND dro='"+t2.getText()+"';";
 ResultSet rs=stmt.executeQuery(sql);
     DefaultTableModel model=(DefaultTableModel) t.getModel();
     model.setRowCount(0);
  while(rs.next()){
         String name=rs.getString("emp");
-        String employid=rs.getString("id");
+        String employid=rs.getString("uni_id");
         String mob=rs.getString("mob");
         String sttime=rs.getString("st_time");
         String entime=rs.getString("en_time");

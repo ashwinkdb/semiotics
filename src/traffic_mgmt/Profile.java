@@ -460,6 +460,10 @@ this.setVisible(false);
             String sql="DELETE from grp WHERE mem1='"+l7.getText()+"' AND  mem2='"+l8.getText()+"' and mem3='"+l9.getText()+"';";
             stmt.executeUpdate(sql);
            JOptionPane.showMessageDialog(this, "you had leave group");
+           JOptionPane.showMessageDialog(null,"Login Again");
+           Login ft = new Login();
+           ft.setVisible(true);
+           this.setVisible(false);
  }
 
  catch(Exception e)

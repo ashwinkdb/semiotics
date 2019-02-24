@@ -20,7 +20,8 @@ public class Grouped extends javax.swing.JFrame {
 
     /** Creates new form Grouped */
     public Grouped() {
-        initComponents();this.setLocationRelativeTo(null); 
+        initComponents();
+        this.setLocationRelativeTo(null);
     }
   public Grouped(String parad) {
         initComponents();
@@ -64,25 +65,25 @@ public class Grouped extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 18));
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel3.setText("Enter First Member Unique ID :");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(120, 190, 353, 29);
+        jLabel3.setBounds(130, 150, 353, 29);
 
-        jLabel6.setFont(new java.awt.Font("Arial", 1, 18));
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel6.setText("Enter Company Name");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(120, 500, 248, 29);
+        jLabel6.setBounds(130, 460, 248, 29);
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 18));
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel4.setText("Enter Second Member Unique ID :");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(120, 260, 400, 29);
+        jLabel4.setBounds(130, 220, 400, 29);
 
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 18));
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel5.setText("Enter Vehicle No.");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(120, 420, 198, 29);
+        jLabel5.setBounds(130, 380, 198, 29);
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel1.setText("UNIQUE ID:");
@@ -104,10 +105,10 @@ public class Grouped extends javax.swing.JFrame {
         jPanel1.add(l1);
         l1.setBounds(130, 80, 90, 22);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 18));
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel2.setText("Enter First Member Unique ID :");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(120, 340, 353, 29);
+        jLabel2.setBounds(130, 300, 353, 29);
 
         jLabel9.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
@@ -124,26 +125,26 @@ public class Grouped extends javax.swing.JFrame {
         jPanel1.add(jButton4);
         jButton4.setBounds(940, 10, 50, 40);
 
-        t1.setFont(new java.awt.Font("Arial", 1, 24));
+        t1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jPanel1.add(t1);
-        t1.setBounds(550, 190, 260, 35);
+        t1.setBounds(560, 150, 260, 35);
 
         t2.setFont(new java.awt.Font("Arial", 1, 24));
         jPanel1.add(t2);
-        t2.setBounds(550, 260, 260, 35);
+        t2.setBounds(560, 220, 260, 35);
 
-        t3.setFont(new java.awt.Font("Arial", 1, 24));
+        t3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jPanel1.add(t3);
-        t3.setBounds(550, 340, 260, 35);
+        t3.setBounds(560, 300, 260, 35);
 
-        t4.setFont(new java.awt.Font("Arial", 1, 24));
+        t4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jPanel1.add(t4);
-        t4.setBounds(550, 420, 260, 35);
+        t4.setBounds(560, 380, 260, 35);
 
-        jLabel7.setFont(new java.awt.Font("Arial", 1, 24));
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel7.setText("Create a Group");
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(410, 120, 190, 30);
+        jLabel7.setBounds(410, 90, 190, 30);
 
         jButton1.setText("SUBMIT");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -157,7 +158,7 @@ public class Grouped extends javax.swing.JFrame {
         c1.setFont(new java.awt.Font("Arial", 1, 24));
         c1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "A 10 Amazon", "A 12 Microsoft" }));
         jPanel1.add(c1);
-        c1.setBounds(550, 500, 260, 30);
+        c1.setBounds(560, 460, 260, 30);
 
         l2.setVisible(false);
         l2.setText("jLabel2");
@@ -210,7 +211,9 @@ String m2 = t2.getText();
 String m3 = t3.getText();
 String v = t4.getText();
 String comp = c1.getSelectedItem().toString();
-
+if(m1.equalsIgnoreCase("")||m2.equalsIgnoreCase("")||m3.equalsIgnoreCase("")||v.equalsIgnoreCase("")||comp.equalsIgnoreCase(""))
+{JOptionPane.showMessageDialog(null,"Enter Proper details");}
+else {
 try{
 
         Class.forName("java.sql.Driver");
@@ -224,11 +227,12 @@ l2.setText(""+dno);}
        int dn = Integer.parseInt(l2.getText());
        String q = "INSERT INTO grp VALUES ('"+dn+"','"+m1+"','"+m2+"','"+m3+"','"+v+"','"+comp+"'); ";
        stmt.executeUpdate(q);
+       JOptionPane.showMessageDialog(null,"Group Created Successfully");
 
 }
 catch(Exception e )
 {JOptionPane.showMessageDialog(null,e.getMessage());}
-        // TODO add your handling code here:
+} // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed

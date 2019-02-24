@@ -85,22 +85,22 @@ public class Profile extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 18));
         jLabel1.setText("UNIQUE ID: ");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(30, 80, 110, 22);
 
-        ll.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        ll.setFont(new java.awt.Font("Arial", 0, 18));
         ll.setText("3452368289");
         jPanel1.add(ll);
         ll.setBounds(140, 70, 130, 40);
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 24));
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel4.setText("Mobile");
         jPanel1.add(jLabel4);
         jLabel4.setBounds(100, 320, 230, 20);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 24));
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel3.setText("Name");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(100, 190, 230, 20);
@@ -380,12 +380,12 @@ public class Profile extends javax.swing.JFrame {
         jPanel1.add(t6);
         t6.setBounds(410, 530, 230, 30);
 
-        jLabel12.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel12.setText("Profile");
         jPanel1.add(jLabel12);
         jLabel12.setBounds(480, 90, 110, 60);
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/WhatsApp Image 2019-02-23 at 3.45.38 PM.jpeg"))); // NOI18N
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/street-238458_192011.jpg"))); // NOI18N
         jPanel1.add(jLabel14);
         jLabel14.setBounds(0, 60, 1090, 690);
 

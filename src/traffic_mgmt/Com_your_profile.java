@@ -71,10 +71,10 @@ public class Com_your_profile extends javax.swing.JFrame {
         jPanel1.add(t2);
         t2.setBounds(860, 320, 120, 30);
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 24));
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel4.setText("Dropping Pincode");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(110, 620, 250, 20);
+        jLabel4.setBounds(110, 620, 250, 29);
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel5.setText("Company Name");
@@ -96,10 +96,10 @@ public class Com_your_profile extends javax.swing.JFrame {
         jPanel1.add(jLabel8);
         jLabel8.setBounds(110, 470, 280, 30);
 
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 24));
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel9.setText("Pickup Pincode");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(110, 540, 250, 30);
+        jLabel9.setBounds(110, 550, 250, 30);
 
         jButton4.setForeground(new java.awt.Color(102, 102, 255));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/Mini.png"))); // NOI18N
@@ -177,7 +177,7 @@ public class Com_your_profile extends javax.swing.JFrame {
         jPanel1.add(jLabel13);
         jLabel13.setBounds(370, 140, 260, 30);
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/WhatsApp Image 2019-02-23 at 3.45.38 PM.jpeg"))); // NOI18N
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/13618713473_d15780ddd4_h.jpg"))); // NOI18N
         jPanel1.add(jLabel14);
         jLabel14.setBounds(0, 60, 1080, 730);
 

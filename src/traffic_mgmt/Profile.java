@@ -59,9 +59,12 @@ public class Profile extends javax.swing.JFrame {
         l9 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
         l10 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
         t1 = new javax.swing.JTextField();
         t2 = new javax.swing.JTextField();
         t3 = new javax.swing.JTextField();
@@ -69,6 +72,8 @@ public class Profile extends javax.swing.JFrame {
         t5 = new javax.swing.JTextField();
         t6 = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
 
         jLabel11.setText("jLabel11");
 
@@ -79,52 +84,65 @@ public class Profile extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel1.setText("UNIQUE ID: ");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(30, 40, 110, 22);
+        jLabel1.setBounds(30, 80, 110, 22);
 
         ll.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         ll.setText("T322138979");
         jPanel1.add(ll);
-        ll.setBounds(140, 30, 130, 40);
+        ll.setBounds(140, 70, 130, 40);
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel4.setText("Mobile");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(100, 300, 230, 20);
+        jLabel4.setBounds(100, 320, 230, 20);
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel3.setText("Name");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(100, 170, 230, 20);
+        jLabel3.setBounds(100, 190, 230, 20);
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel5.setText("Employee ID");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(100, 230, 270, 30);
+        jLabel5.setBounds(100, 250, 270, 30);
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel6.setText("Email ID");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(100, 370, 160, 30);
+        jLabel6.setBounds(100, 390, 160, 30);
 
         jLabel7.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel7.setText("Vehicle Number");
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(100, 510, 340, 30);
+        jLabel7.setBounds(100, 530, 340, 30);
 
         jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel8.setText("Residence Mobile No.");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(100, 440, 340, 30);
+        jLabel8.setBounds(100, 460, 340, 30);
 
         jButton2.setText("Update Personal Details");
         jPanel1.add(jButton2);
         jButton2.setBounds(340, 665, 180, 40);
 
-        jButton3.setText("Create Group");
+        jButton3.setText("Find People");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton3);
         jButton3.setBounds(70, 660, 150, 40);
 
         jButton4.setText("Update Vehicle Details");
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButton4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jButton4MouseExited(evt);
+            }
+        });
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -138,59 +156,95 @@ public class Profile extends javax.swing.JFrame {
         jButton5.setBounds(929, 665, 150, 40);
 
         l7.setVisible(false);
+        l7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         l7.setText("65");
         jPanel1.add(l7);
-        l7.setBounds(890, 170, 130, 16);
+        l7.setBounds(890, 190, 130, 17);
 
         jLabel15.setVisible(false);
+        jLabel15.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel15.setText("Ist Person");
         jPanel1.add(jLabel15);
-        jLabel15.setBounds(740, 170, 80, 16);
+        jLabel15.setBounds(740, 190, 80, 17);
 
         jLabel16.setVisible(false);
+        jLabel16.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel16.setText("2nd Person");
         jPanel1.add(jLabel16);
-        jLabel16.setBounds(740, 240, 90, 16);
+        jLabel16.setBounds(740, 260, 90, 17);
 
         l8.setVisible(false);
+        l8.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         l8.setText("65");
         jPanel1.add(l8);
-        l8.setBounds(890, 240, 130, 16);
+        l8.setBounds(890, 260, 130, 17);
 
         jLabel17.setVisible(false);
+        jLabel17.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel17.setText("3rd Person");
         jPanel1.add(jLabel17);
-        jLabel17.setBounds(740, 310, 80, 16);
+        jLabel17.setBounds(740, 330, 80, 17);
 
         l9.setVisible(false);
+        l9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         l9.setText("65");
         jPanel1.add(l9);
-        l9.setBounds(890, 310, 130, 16);
+        l9.setBounds(890, 330, 130, 17);
 
         jLabel9.setVisible(true);
+        jLabel9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel9.setText("No Group Found!!!!!");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(790, 310, 130, 30);
+        jLabel9.setBounds(790, 330, 130, 30);
 
         jLabel2.setVisible(false);
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel2.setText("Vehicle Number");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(740, 380, 120, 16);
+        jLabel2.setBounds(740, 400, 120, 17);
+
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/crs.png"))); // NOI18N
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton6);
+        jButton6.setBounds(1020, 10, 50, 40);
 
         l10.setVisible(false);
+        l10.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         l10.setText("ee");
         jPanel1.add(l10);
-        l10.setBounds(890, 380, 120, 20);
+        l10.setBounds(890, 400, 120, 20);
 
         jLabel10.setVisible(false);
+        jLabel10.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel10.setText("Parking Slot :");
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(740, 450, 110, 16);
+        jLabel10.setBounds(740, 470, 110, 17);
+
+        jButton7.setForeground(new java.awt.Color(102, 102, 255));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/Mini.png"))); // NOI18N
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton7);
+        jButton7.setBounds(950, 10, 50, 40);
 
         jLabel13.setVisible(false);
+        jLabel13.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel13.setText("ee");
         jPanel1.add(jLabel13);
-        jLabel13.setBounds(740, 480, 310, 20);
+        jLabel13.setBounds(740, 500, 310, 20);
+
+        jLabel19.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel19.setText("Profile");
+        jPanel1.add(jLabel19);
+        jLabel19.setBounds(30, 17, 110, 30);
 
         String uni = ll.getText();
         try{
@@ -252,39 +306,48 @@ public class Profile extends javax.swing.JFrame {
                 l10.setVisible(true);
                 jLabel9.setVisible(false);
             }
-            else {jLabel9.setVisible(true);}
+            else {jLabel9.setVisible(true);
+                jButton4.setEnabled(false);}
         }
 
         catch(Exception e)
         {JOptionPane.showMessageDialog(null,e.getMessage());}
         t1.setEditable(false);
         jPanel1.add(t1);
-        t1.setBounds(410, 170, 230, 30);
+        t1.setBounds(410, 190, 230, 30);
 
         t2.setEditable(false);
         jPanel1.add(t2);
-        t2.setBounds(410, 230, 230, 30);
+        t2.setBounds(410, 250, 230, 30);
 
         t3.setEditable(false);
         jPanel1.add(t3);
-        t3.setBounds(410, 300, 230, 30);
+        t3.setBounds(410, 320, 230, 30);
 
         t4.setEditable(false);
         jPanel1.add(t4);
-        t4.setBounds(410, 370, 230, 30);
+        t4.setBounds(410, 390, 230, 30);
 
         t5.setEditable(false);
         jPanel1.add(t5);
-        t5.setBounds(410, 440, 230, 30);
+        t5.setBounds(410, 460, 230, 30);
 
         t6.setEditable(false);
         jPanel1.add(t6);
-        t6.setBounds(410, 510, 230, 30);
+        t6.setBounds(410, 530, 230, 30);
 
         jLabel12.setFont(new java.awt.Font("Arial", 1, 30)); // NOI18N
         jLabel12.setText("Profile");
         jPanel1.add(jLabel12);
-        jLabel12.setBounds(480, 60, 110, 60);
+        jLabel12.setBounds(480, 90, 110, 60);
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/WhatsApp Image 2019-02-23 at 3.45.38 PM.jpeg"))); // NOI18N
+        jPanel1.add(jLabel14);
+        jLabel14.setBounds(0, 60, 1090, 690);
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/tool.jpg"))); // NOI18N
+        jPanel1.add(jLabel18);
+        jLabel18.setBounds(0, -4, 1090, 70);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -308,6 +371,30 @@ String uni = ll.getText();
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        System.exit(0);        // TODO add your handling code here:
+}//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        this.setState(ICONIFIED);        // TODO add your handling code here:
+}//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4MouseExited
+
+    private void jButton4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4MouseEntered
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+String uni = ll.getText();
+members ne = new members(uni);
+ne.setVisible(true);
+this.setVisible(false);
+// TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -324,14 +411,19 @@ String uni = ll.getText();
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

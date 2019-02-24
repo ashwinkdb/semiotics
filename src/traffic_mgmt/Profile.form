@@ -207,7 +207,7 @@
         <Component class="javax.swing.JLabel" name="l7">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
+              <Font name="Arial" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="65"/>
           </Properties>
@@ -223,7 +223,7 @@
         <Component class="javax.swing.JLabel" name="jLabel15">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
+              <Font name="Arial" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Ist Person"/>
           </Properties>
@@ -239,7 +239,7 @@
         <Component class="javax.swing.JLabel" name="jLabel16">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
+              <Font name="Arial" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="2nd Person"/>
           </Properties>
@@ -255,7 +255,7 @@
         <Component class="javax.swing.JLabel" name="l8">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
+              <Font name="Arial" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="65"/>
           </Properties>
@@ -271,7 +271,7 @@
         <Component class="javax.swing.JLabel" name="jLabel17">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
+              <Font name="Arial" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="3rd Person"/>
           </Properties>
@@ -287,7 +287,7 @@
         <Component class="javax.swing.JLabel" name="l9">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
+              <Font name="Arial" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="65"/>
           </Properties>
@@ -303,7 +303,7 @@
         <Component class="javax.swing.JLabel" name="jLabel9">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
+              <Font name="Arial" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="No Group Found!!!!!"/>
           </Properties>
@@ -319,7 +319,7 @@
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
+              <Font name="Arial" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Vehicle Number"/>
           </Properties>
@@ -350,7 +350,7 @@
         <Component class="javax.swing.JLabel" name="l10">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
+              <Font name="Arial" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="ee"/>
           </Properties>
@@ -366,7 +366,7 @@
         <Component class="javax.swing.JLabel" name="jLabel10">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
+              <Font name="Arial" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Parking Slot :"/>
           </Properties>
@@ -426,7 +426,7 @@
         <Component class="javax.swing.JLabel" name="jLabel13">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
+              <Font name="Arial" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="ee"/>
           </Properties>
@@ -435,7 +435,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="740" y="500" width="310" height="20"/>
+              <AbsoluteConstraints x="880" y="470" width="160" height="20"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -520,7 +520,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="t6">
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="t6.setEditable(false);&#xa;String uni = ll.getText();&#xa;try{&#xa;Class.forName(&quot;java.sql.Driver&quot;);&#xa;Connection con = DriverManager.getConnection(&quot;jdbc:mysql://localhost/traffic&quot;,&quot;root&quot;,&quot;help&quot;);&#xa;Statement stmt = con.createStatement();&#xa;String  quer = &quot;Select emp,id,mob,gmai,res_mob,veh_no FROM register WHERE uni_id=&apos;&quot;+uni+&quot;&apos;;&quot;;&#xa;ResultSet rs = stmt.executeQuery(quer);&#xa;while(rs.next())&#xa;{String nam = rs.getString(&quot;emp&quot;);&#xa; String id = rs.getString(&quot;id&quot;);&#xa; String mob = rs.getString(&quot;mob&quot;);&#xa;String gm = rs.getString(&quot;gmai&quot;);&#xa;String res = rs.getString(&quot;res_mob&quot;);&#xa;String veh = rs.getString(&quot;veh_no&quot;);&#xa;t1.setText(nam);&#xa;t2.setText(id);&#xa;t3.setText(mob);&#xa;t4.setText(gm);&#xa;t5.setText(res);&#xa;t6.setText(veh);&#xa;&#xa;}&#xa;}&#xa;&#xa;catch(Exception e )&#xa;{JOptionPane.showMessageDialog(null,e.getMessage());}&#xa;&#xa;int i;&#xa;&#xa;try{&#xa;Class.forName(&quot;java.sql.Driver&quot;);&#xa;Connection con = DriverManager.getConnection(&quot;jdbc:mysql://localhost/traffic&quot;,&quot;root&quot;,&quot;help&quot;);&#xa;Statement stmt = con.createStatement();&#xa;String qu = &quot;Select mem1 , mem2 ,mem3 ,veh_no,comp FROM grp WHERE mem1 = &apos;&quot;+uni+&quot;&apos; OR mem2 =&apos;&quot;+uni+&quot;&apos; OR mem3=&apos;&quot;+uni+&quot;&apos;;&quot;;&#xa;ResultSet rs = stmt.executeQuery(qu);&#xa;if(rs.next())&#xa;{&#xa;String m1 = rs.getString(&quot;mem1&quot;);&#xa;String m2 = rs.getString(&quot;mem2&quot;);&#xa;String m3 = rs.getString(&quot;mem3&quot;);&#xa;String v_n = rs.getString(&quot;veh_no&quot;);&#xa;String comp= rs.getString(&quot;comp&quot;);&#xa;l7.setText(m1);&#xa;l8.setText(m2);&#xa;l9.setText(m3);&#xa;l10.setText(v_n);&#xa;jLabel13.setText(comp);&#xa;jLabel15.setVisible(true);&#xa;jLabel16.setVisible(true);&#xa;jLabel17.setVisible(true);&#xa;jLabel13.setVisible(true);&#xa;jLabel2.setVisible(true);&#xa;jLabel10.setVisible(true);&#xa;&#xa;l7.setVisible(true);&#xa;l8.setVisible(true);&#xa;l9.setVisible(true);&#xa;l10.setVisible(true);&#xa;jLabel9.setVisible(false);&#xa;}&#xa;else {jLabel9.setVisible(true);&#xa;jButton4.setEnabled(false);&#xa;jButton1.setEnabled(false);&#xa;}&#xa;}&#xa;&#xa;catch(Exception e)&#xa;{JOptionPane.showMessageDialog(null,e.getMessage());}&#xa;t1.setEditable(false);"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="t6.setEditable(false);"/>
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">

@@ -43,6 +43,7 @@ public class delete extends javax.swing.JFrame {
         l1 = new javax.swing.JLabel();
         jButton7 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
@@ -84,6 +85,15 @@ public class delete extends javax.swing.JFrame {
         });
         jPanel1.add(jButton6);
         jButton6.setBounds(840, 10, 50, 40);
+
+        jButton2.setText("Back");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2);
+        jButton2.setBounds(120, 510, 100, 40);
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel3.setText("UNIQUE ID:");
@@ -197,6 +207,15 @@ catch(Exception w)
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+String vv = l1.getText();
+        Profile nn = new Profile(vv);
+nn.setVisible(true);
+this.setVisible(false);
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -211,6 +230,7 @@ catch(Exception w)
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel18;

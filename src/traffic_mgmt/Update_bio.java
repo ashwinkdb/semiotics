@@ -24,6 +24,11 @@ public class Update_bio extends javax.swing.JFrame {
     public Update_bio() {
         initComponents();this.setLocationRelativeTo(null); 
     }
+    public Update_bio(String para )
+    {
+    initComponents();
+    l1.setText(para);
+    }
 
     /** This method is called from within the constructor to
      * initialize the form.

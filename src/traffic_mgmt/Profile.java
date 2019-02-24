@@ -440,6 +440,11 @@ this.setVisible(false);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+String uni = ll.getText();
+Update_bio hb = new Update_bio(uni);
+hb.setVisible(true);
+this.setVisible(false);
+
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 

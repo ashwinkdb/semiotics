@@ -21,7 +21,7 @@ public class Login extends javax.swing.JFrame {
 
     /** Creates new form Login */
     public Login() {
-        initComponents();
+        initComponents();this.setLocationRelativeTo(null); 
     }
 
     /** This method is called from within the constructor to
@@ -52,6 +52,7 @@ public class Login extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setLayout(null);
 
@@ -74,7 +75,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jButton4);
         jButton4.setBounds(820, 10, 50, 40);
 
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Sign In");
         jPanel1.add(jLabel9);
@@ -84,7 +85,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, -4, 890, 70);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel2.setText("Password");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(200, 310, 160, 30);
@@ -102,7 +103,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jPanel2);
         jPanel2.setBounds(0, 0, 0, 0);
 
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel5.setText("Unique ID :");
         jPanel1.add(jLabel5);
         jLabel5.setBounds(200, 220, 140, 30);
@@ -129,7 +130,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(410, 460, 100, 50);
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Arial", 0, 18));
         jLabel6.setForeground(new java.awt.Color(102, 153, 255));
         jLabel6.setText("Not Register Yet ?");
         jPanel1.add(jLabel6);
@@ -144,7 +145,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(490, 560, 150, 30);
 
-        jLabel7.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Arial", 0, 24));
         jLabel7.setText("Sign In");
         jPanel1.add(jLabel7);
         jLabel7.setBounds(400, 100, 90, 40);

@@ -21,7 +21,7 @@ public class delete extends javax.swing.JFrame {
 
     /** Creates new form delete */
     public delete() {
-        initComponents();
+        initComponents();this.setLocationRelativeTo(null); 
     }
     public delete (String para )
     {initComponents();
@@ -57,10 +57,11 @@ public class delete extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setLayout(null);
 
-        l1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        l1.setFont(new java.awt.Font("Arial", 1, 18));
         l1.setText("T322138979");
         jPanel1.add(l1);
         l1.setBounds(150, 90, 160, 30);
@@ -84,12 +85,12 @@ public class delete extends javax.swing.JFrame {
         jPanel1.add(jButton6);
         jButton6.setBounds(840, 10, 50, 40);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel3.setText("UNIQUE ID:");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(40, 90, 130, 30);
 
-        jLabel19.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("Delete My Account");
         jPanel1.add(jLabel19);
@@ -99,25 +100,25 @@ public class delete extends javax.swing.JFrame {
         jPanel1.add(jLabel18);
         jLabel18.setBounds(0, -4, 1090, 70);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel2.setText("Reason to Delete the Account :");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(190, 190, 400, 20);
 
         buttonGroup1.add(r3);
-        r3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        r3.setFont(new java.awt.Font("Arial", 1, 24));
         r3.setText("Other (Specify it)");
         jPanel1.add(r3);
         r3.setBounds(190, 360, 240, 37);
 
         buttonGroup1.add(r2);
-        r2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        r2.setFont(new java.awt.Font("Arial", 1, 24));
         r2.setText("Company change");
         jPanel1.add(r2);
         r2.setBounds(190, 300, 240, 37);
 
         buttonGroup1.add(r1);
-        r1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        r1.setFont(new java.awt.Font("Arial", 1, 24));
         r1.setText("Address change");
         jPanel1.add(r1);
         r1.setBounds(190, 240, 240, 37);
@@ -137,7 +138,7 @@ public class delete extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(410, 510, 77, 40);
+        jButton1.setBounds(410, 510, 90, 40);
 
         jLabel4.setText("(once you click submit , your account cant be recovered)");
         jPanel1.add(jLabel4);
@@ -186,6 +187,9 @@ Class.forName("java.sql.Driver");
             String s = "DELETE FROM register WHERE uni_id ='"+uni+"';";
             stmt.executeUpdate(s );
             JOptionPane.showMessageDialog(null, "Your Account Has been Deleted");
+            Login gt = new Login();
+            gt.setVisible(true);
+            this.setVisible(false);
 }
 catch(Exception w)
 {JOptionPane.showMessageDialog(null,w.getMessage());}

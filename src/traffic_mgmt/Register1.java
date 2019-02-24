@@ -20,7 +20,7 @@ public class Register1 extends javax.swing.JFrame {
 
     /** Creates new form Register1 */
     public Register1() {
-        initComponents();
+        initComponents();this.setLocationRelativeTo(null); 
     }
 
     /** This method is called from within the constructor to
@@ -57,16 +57,17 @@ public class Register1 extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 36));
         jLabel1.setForeground(new java.awt.Color(0, 51, 255));
         jLabel1.setText("REGISTER HERE!!!");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(350, 90, 327, 40);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel2.setText("For Hassle Free Ghaziabad");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(400, 140, 234, 20);
@@ -173,7 +174,7 @@ public class Register1 extends javax.swing.JFrame {
         jPanel1.add(t7);
         t7.setBounds(600, 640, 240, 30);
 
-        jLabel11.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Registration");
         jPanel1.add(jLabel11);

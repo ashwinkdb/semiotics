@@ -21,7 +21,7 @@ public class members extends javax.swing.JFrame {
 
     /** Creates new form members */
     public members() {
-        initComponents();
+        initComponents();this.setLocationRelativeTo(null); 
     }
   public members(String parad) {
         initComponents();
@@ -56,10 +56,11 @@ public class members extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setLayout(null);
 
-        t1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        t1.setFont(new java.awt.Font("Arial", 0, 18));
         jPanel1.add(t1);
         t1.setBounds(270, 210, 170, 28);
 
@@ -85,7 +86,7 @@ public class members extends javax.swing.JFrame {
         jPanel1.add(jButton4);
         jButton4.setBounds(940, 10, 50, 40);
 
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Search People");
         jPanel1.add(jLabel9);
@@ -101,17 +102,17 @@ public class members extends javax.swing.JFrame {
         jPanel1.add(jButton3);
         jButton3.setBounds(870, 10, 50, 40);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 18));
         jLabel1.setText("Pickup Pincode");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(110, 210, 124, 22);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 18));
         jLabel2.setText("Drop Pincode");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(580, 210, 109, 22);
 
-        t2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        t2.setFont(new java.awt.Font("Arial", 0, 18));
         jPanel1.add(t2);
         t2.setBounds(730, 210, 180, 28);
 
@@ -124,7 +125,7 @@ public class members extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(470, 310, 73, 25);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Arial", 0, 24));
         jLabel3.setText("Find The People Near You !!!");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(370, 130, 320, 29);
@@ -142,12 +143,12 @@ public class members extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(30, 610, 90, 40);
 
-        l1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        l1.setFont(new java.awt.Font("Arial", 0, 18));
         l1.setText("T322138979");
         jPanel1.add(l1);
         l1.setBounds(140, 90, 130, 40);
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Arial", 0, 18));
         jLabel5.setText("UNIQUE ID: ");
         jPanel1.add(jLabel5);
         jLabel5.setBounds(30, 100, 110, 22);

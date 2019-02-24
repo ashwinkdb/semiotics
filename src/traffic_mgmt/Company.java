@@ -29,7 +29,7 @@ public class Company extends javax.swing.JFrame {
 
     /** Creates new form Company */
     public Company() {
-        initComponents();
+        initComponents();this.setLocationRelativeTo(null); 
     }
 
     /** This method is called from within the constructor to
@@ -56,10 +56,11 @@ public class Company extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setLayout(null);
 
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Parking Schedule");
         jPanel1.add(jLabel9);
@@ -97,7 +98,7 @@ public class Company extends javax.swing.JFrame {
         jPanel1.add(c1);
         c1.setBounds(540, 190, 300, 30);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel1.setText("Select Company Name");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(110, 190, 270, 29);

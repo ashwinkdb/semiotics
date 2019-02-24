@@ -20,7 +20,7 @@ public class Update_Details extends javax.swing.JFrame {
 
     /** Creates new form Update_Details */
     public Update_Details() {
-        initComponents();
+        initComponents();this.setLocationRelativeTo(null); 
     }
 public Update_Details(String para)
 {
@@ -55,6 +55,7 @@ l1.setText(para);
         jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setLayout(null);
 
@@ -79,18 +80,18 @@ l1.setText(para);
         jPanel1.add(t1);
         t1.setBounds(500, 280, 210, 30);
 
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Update Future Details.....");
         jPanel1.add(jLabel9);
         jLabel9.setBounds(30, 17, 250, 30);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel2.setText("Company Name :");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(180, 400, 194, 29);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel1.setText("Vehicle reg. no. :");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(180, 280, 193, 29);
@@ -112,22 +113,22 @@ l1.setText(para);
         jPanel1.add(jLabel4);
         jLabel4.setBounds(0, -4, 850, 70);
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Arial", 0, 26));
         jLabel5.setText("For Parking");
         jPanel1.add(jLabel5);
         jLabel5.setBounds(350, 190, 140, 30);
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Arial", 0, 26));
         jLabel6.setText("Update Your Next Month Details");
         jPanel1.add(jLabel6);
         jLabel6.setBounds(240, 160, 370, 30);
 
-        jLabel7.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Arial", 0, 18));
         jLabel7.setText("UNIQUE ID: ");
         jPanel1.add(jLabel7);
         jLabel7.setBounds(30, 90, 110, 22);
 
-        l1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        l1.setFont(new java.awt.Font("Arial", 0, 18));
         l1.setText("T322138979");
         jPanel1.add(l1);
         l1.setBounds(140, 80, 130, 40);

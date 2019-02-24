@@ -21,7 +21,7 @@ public class Profile extends javax.swing.JFrame {
 
     /** Creates new form Profile */
     public Profile() {
-        initComponents();
+        initComponents();this.setLocationRelativeTo(null); 
     }
    public Profile(String parad) {
         initComponents();
@@ -62,6 +62,8 @@ public class Profile extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         l10 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jButton9 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
@@ -79,6 +81,7 @@ public class Profile extends javax.swing.JFrame {
         jLabel11.setText("jLabel11");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setLayout(null);
 
@@ -88,26 +91,26 @@ public class Profile extends javax.swing.JFrame {
         jLabel1.setBounds(30, 80, 110, 22);
 
         ll.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        ll.setText("T322138979");
+        ll.setText("3452368289");
         jPanel1.add(ll);
         ll.setBounds(140, 70, 130, 40);
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel4.setText("Mobile");
         jPanel1.add(jLabel4);
         jLabel4.setBounds(100, 320, 230, 20);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel3.setText("Name");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(100, 190, 230, 20);
 
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel5.setText("Employee ID");
         jPanel1.add(jLabel5);
         jLabel5.setBounds(100, 250, 270, 30);
 
-        jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel6.setText("Email ID");
         jPanel1.add(jLabel6);
         jLabel6.setBounds(100, 390, 160, 30);
@@ -117,7 +120,7 @@ public class Profile extends javax.swing.JFrame {
         jPanel1.add(jLabel7);
         jLabel7.setBounds(100, 530, 340, 30);
 
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel8.setText("Residence Mobile No.");
         jPanel1.add(jLabel8);
         jLabel8.setBounds(100, 460, 340, 30);
@@ -167,49 +170,49 @@ public class Profile extends javax.swing.JFrame {
         jButton5.setBounds(929, 665, 150, 40);
 
         l7.setVisible(false);
-        l7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        l7.setFont(new java.awt.Font("Arial", 0, 14));
         l7.setText("65");
         jPanel1.add(l7);
         l7.setBounds(890, 190, 130, 17);
 
         jLabel15.setVisible(false);
-        jLabel15.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Arial", 0, 14));
         jLabel15.setText("Ist Person");
         jPanel1.add(jLabel15);
         jLabel15.setBounds(740, 190, 80, 17);
 
         jLabel16.setVisible(false);
-        jLabel16.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Arial", 0, 14));
         jLabel16.setText("2nd Person");
         jPanel1.add(jLabel16);
         jLabel16.setBounds(740, 260, 90, 17);
 
         l8.setVisible(false);
-        l8.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        l8.setFont(new java.awt.Font("Arial", 0, 14));
         l8.setText("65");
         jPanel1.add(l8);
         l8.setBounds(890, 260, 130, 17);
 
         jLabel17.setVisible(false);
-        jLabel17.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Arial", 0, 14));
         jLabel17.setText("3rd Person");
         jPanel1.add(jLabel17);
         jLabel17.setBounds(740, 330, 80, 17);
 
         l9.setVisible(false);
-        l9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        l9.setFont(new java.awt.Font("Arial", 0, 14));
         l9.setText("65");
         jPanel1.add(l9);
         l9.setBounds(890, 330, 130, 17);
 
         jLabel9.setVisible(true);
-        jLabel9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Arial", 0, 14));
         jLabel9.setText("No Group Found!!!!!");
         jPanel1.add(jLabel9);
         jLabel9.setBounds(790, 330, 130, 30);
 
         jLabel2.setVisible(false);
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 14));
         jLabel2.setText("Vehicle Number");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(740, 400, 120, 17);
@@ -224,16 +227,34 @@ public class Profile extends javax.swing.JFrame {
         jButton6.setBounds(1020, 10, 50, 40);
 
         l10.setVisible(false);
-        l10.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        l10.setFont(new java.awt.Font("Arial", 0, 14));
         l10.setText("ee");
         jPanel1.add(l10);
         l10.setBounds(890, 400, 120, 20);
 
         jLabel10.setVisible(false);
-        jLabel10.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Arial", 0, 14));
         jLabel10.setText("Parking Slot :");
         jPanel1.add(jLabel10);
         jLabel10.setBounds(740, 470, 110, 17);
+
+        jButton9.setText("Refresh");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton9);
+        jButton9.setBounds(470, 30, 90, 25);
+
+        jButton8.setText("LOG OUT");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton8);
+        jButton8.setBounds(959, 80, 100, 25);
 
         jButton7.setForeground(new java.awt.Color(102, 102, 255));
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/Mini.png"))); // NOI18N
@@ -246,12 +267,12 @@ public class Profile extends javax.swing.JFrame {
         jButton7.setBounds(950, 10, 50, 40);
 
         jLabel13.setVisible(false);
-        jLabel13.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Arial", 0, 14));
         jLabel13.setText("ee");
         jPanel1.add(jLabel13);
         jLabel13.setBounds(740, 500, 310, 20);
 
-        jLabel19.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("Profile");
         jPanel1.add(jLabel19);
@@ -266,6 +287,27 @@ public class Profile extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(810, 560, 130, 25);
 
+        t1.setEditable(false);
+        jPanel1.add(t1);
+        t1.setBounds(410, 190, 230, 30);
+
+        t2.setEditable(false);
+        jPanel1.add(t2);
+        t2.setBounds(410, 250, 230, 30);
+
+        t3.setEditable(false);
+        jPanel1.add(t3);
+        t3.setBounds(410, 320, 230, 30);
+
+        t4.setEditable(false);
+        jPanel1.add(t4);
+        t4.setBounds(410, 390, 230, 30);
+
+        t5.setEditable(false);
+        jPanel1.add(t5);
+        t5.setBounds(410, 460, 230, 30);
+
+        t6.setEditable(false);
         String uni = ll.getText();
         try{
             Class.forName("java.sql.Driver");
@@ -327,32 +369,14 @@ public class Profile extends javax.swing.JFrame {
                 jLabel9.setVisible(false);
             }
             else {jLabel9.setVisible(true);
-                jButton4.setEnabled(false);}
+                jButton4.setEnabled(false);
+                jButton1.setEnabled(false);
+            }
         }
 
         catch(Exception e)
         {JOptionPane.showMessageDialog(null,e.getMessage());}
         t1.setEditable(false);
-        jPanel1.add(t1);
-        t1.setBounds(410, 190, 230, 30);
-
-        t2.setEditable(false);
-        jPanel1.add(t2);
-        t2.setBounds(410, 250, 230, 30);
-
-        t3.setEditable(false);
-        jPanel1.add(t3);
-        t3.setBounds(410, 320, 230, 30);
-
-        t4.setEditable(false);
-        jPanel1.add(t4);
-        t4.setBounds(410, 390, 230, 30);
-
-        t5.setEditable(false);
-        jPanel1.add(t5);
-        t5.setBounds(410, 460, 230, 30);
-
-        t6.setEditable(false);
         jPanel1.add(t6);
         t6.setBounds(410, 530, 230, 30);
 
@@ -373,7 +397,7 @@ public class Profile extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1090, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1086, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -442,6 +466,85 @@ this.setVisible(false);
  {JOptionPane.showMessageDialog(null, e.getMessage());}// TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+Login hn = new Login();
+hn.setVisible(true);
+this.setVisible(false);
+// TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+String uni = ll.getText();
+try{
+Class.forName("java.sql.Driver");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost/traffic","root","help");
+Statement stmt = con.createStatement();
+String  quer = "Select emp,id,mob,gmai,res_mob,veh_no FROM register WHERE uni_id='"+uni+"';";
+ResultSet rs = stmt.executeQuery(quer);
+while(rs.next())
+{String nam = rs.getString("emp");
+ String id = rs.getString("id");
+ String mob = rs.getString("mob");
+String gm = rs.getString("gmai");
+String res = rs.getString("res_mob");
+String veh = rs.getString("veh_no");
+t1.setText(nam);
+t2.setText(id);
+t3.setText(mob);
+t4.setText(gm);
+t5.setText(res);
+t6.setText(veh);
+
+}
+}
+
+catch(Exception e )
+{JOptionPane.showMessageDialog(null,e.getMessage());}
+
+int i;
+
+try{
+Class.forName("java.sql.Driver");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost/traffic","root","help");
+Statement stmt = con.createStatement();
+String qu = "Select mem1 , mem2 ,mem3 ,veh_no,comp FROM grp WHERE mem1 = '"+uni+"' OR mem2 ='"+uni+"' OR mem3='"+uni+"';";
+ResultSet rs = stmt.executeQuery(qu);
+if(rs.next())
+{
+String m1 = rs.getString("mem1");
+String m2 = rs.getString("mem2");
+String m3 = rs.getString("mem3");
+String v_n = rs.getString("veh_no");
+String comp= rs.getString("comp");
+l7.setText(m1);
+l8.setText(m2);
+l9.setText(m3);
+l10.setText(v_n);
+jLabel13.setText(comp);
+jLabel15.setVisible(true);
+jLabel16.setVisible(true);
+jLabel17.setVisible(true);
+jLabel13.setVisible(true);
+jLabel2.setVisible(true);
+jLabel10.setVisible(true);
+
+l7.setVisible(true);
+l8.setVisible(true);
+l9.setVisible(true);
+l10.setVisible(true);
+jLabel9.setVisible(false);
+}
+else {jLabel9.setVisible(true);
+jButton4.setEnabled(false);
+jButton1.setEnabled(false);
+}
+}
+
+catch(Exception e)
+{JOptionPane.showMessageDialog(null,e.getMessage());}
+t1.setEditable(false);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -461,6 +564,8 @@ this.setVisible(false);
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

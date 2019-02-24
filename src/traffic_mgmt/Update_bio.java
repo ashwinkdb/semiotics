@@ -22,7 +22,7 @@ public class Update_bio extends javax.swing.JFrame {
 
     /** Creates new form Update_bio */
     public Update_bio() {
-        initComponents();
+        initComponents();this.setLocationRelativeTo(null); 
     }
 
     /** This method is called from within the constructor to
@@ -50,10 +50,11 @@ public class Update_bio extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setLayout(null);
 
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Update Your Profile");
         jPanel1.add(jLabel9);
@@ -82,7 +83,7 @@ public class Update_bio extends javax.swing.JFrame {
         jPanel1.add(jLabel8);
         jLabel8.setBounds(0, -4, 1010, 70);
 
-        l2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        l2.setFont(new java.awt.Font("Arial", 0, 24));
         l2.setVisible(false);
         l2.setText("What To Change ?");
         jPanel1.add(l2);
@@ -98,7 +99,7 @@ public class Update_bio extends javax.swing.JFrame {
         jPanel1.add(c1);
         c1.setBounds(630, 180, 250, 30);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 24));
         jLabel2.setText("What To Change ?");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(190, 180, 210, 30);
@@ -116,12 +117,12 @@ public class Update_bio extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(440, 390, 130, 50);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel3.setText("UNIQUE ID:");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(50, 100, 130, 30);
 
-        l1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        l1.setFont(new java.awt.Font("Arial", 1, 18));
         l1.setText("T322138979");
         jPanel1.add(l1);
         l1.setBounds(160, 100, 160, 30);

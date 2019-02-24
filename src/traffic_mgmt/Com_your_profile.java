@@ -64,6 +64,7 @@ public class Com_your_profile extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setLayout(null);
         jPanel1.add(t1);
@@ -71,7 +72,7 @@ public class Com_your_profile extends javax.swing.JFrame {
         jPanel1.add(t2);
         t2.setBounds(860, 320, 120, 30);
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel4.setText("Dropping Pincode");
         jPanel1.add(jLabel4);
         jLabel4.setBounds(110, 620, 250, 29);
@@ -96,7 +97,7 @@ public class Com_your_profile extends javax.swing.JFrame {
         jPanel1.add(jLabel8);
         jLabel8.setBounds(110, 470, 280, 30);
 
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel9.setText("Pickup Pincode");
         jPanel1.add(jLabel9);
         jLabel9.setBounds(110, 550, 250, 30);

@@ -55,6 +55,8 @@ public class Grouped extends javax.swing.JFrame {
         c1 = new javax.swing.JComboBox();
         l2 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -148,7 +150,7 @@ public class Grouped extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(450, 620, 130, 60);
+        jButton1.setBounds(450, 630, 120, 50);
 
         c1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         c1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "A 10 Amazon", "A 12 Microsoft" }));
@@ -163,6 +165,24 @@ public class Grouped extends javax.swing.JFrame {
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/tool.jpg"))); // NOI18N
         jPanel1.add(jLabel8);
         jLabel8.setBounds(0, -4, 1010, 70);
+
+        jButton2.setText("Go to Profile");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2);
+        jButton2.setBounds(780, 630, 110, 50);
+
+        jButton5.setText("Back");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton5);
+        jButton5.setBounds(110, 630, 110, 50);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -213,6 +233,20 @@ catch(Exception e )
         System.exit(0);        // TODO add your handling code here:
 }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+String uni = l1.getText();
+        Profile nw = new Profile(uni);
+        nw.setVisible(true);
+        this.setVisible(false);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+String uni = l1.getText();
+members ne = new members(uni);
+ne.setVisible(true);
+this.setVisible(false);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -227,8 +261,10 @@ catch(Exception e )
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox c1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

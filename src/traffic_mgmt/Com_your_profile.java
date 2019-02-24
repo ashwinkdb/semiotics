@@ -39,19 +39,17 @@ public class Com_your_profile extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
         t1 = new javax.swing.JTextField();
         t2 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
         t3 = new javax.swing.JTextField();
         t4 = new javax.swing.JTextField();
         t5 = new javax.swing.JTextField();
@@ -60,66 +58,71 @@ public class Com_your_profile extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         l1 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(null);
-
-        jButton1.setText("jButton1");
-        jPanel1.add(jButton1);
-        jButton1.setBounds(780, 10, 50, 40);
         jPanel1.add(t1);
-        t1.setBounds(570, 520, 340, 30);
+        t1.setBounds(640, 610, 340, 30);
         jPanel1.add(t2);
-        t2.setBounds(790, 230, 120, 30);
+        t2.setBounds(860, 320, 120, 30);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 18));
-        jLabel3.setText("Complete Your Profile");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(20, 20, 200, 20);
-
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 24));
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel4.setText("Dropping Pincode");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(40, 530, 250, 20);
+        jLabel4.setBounds(110, 620, 250, 20);
 
-        jLabel1.setText("dfs");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 913, 58);
-
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 24));
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel5.setText("Company Name");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(40, 160, 250, 30);
+        jLabel5.setBounds(110, 250, 250, 30);
 
-        jLabel6.setFont(new java.awt.Font("Arial", 1, 24));
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel6.setText("Working Timings (HH:MM:SS)");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(40, 230, 350, 40);
+        jLabel6.setBounds(110, 320, 350, 40);
 
-        jLabel7.setFont(new java.awt.Font("Arial", 1, 24));
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel7.setText("Vehicle Name");
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(40, 310, 160, 20);
+        jLabel7.setBounds(110, 400, 160, 20);
 
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 24));
+        jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel8.setText("Vehicle Registration No.");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(40, 380, 280, 30);
+        jLabel8.setBounds(110, 470, 280, 30);
 
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 24));
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel9.setText("Pickup Pincode");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(40, 450, 250, 30);
+        jLabel9.setBounds(110, 540, 250, 30);
 
-        jLabel10.setFont(new java.awt.Font("Arial", 1, 14));
+        jButton4.setForeground(new java.awt.Color(102, 102, 255));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/Mini.png"))); // NOI18N
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton4);
+        jButton4.setBounds(930, 10, 50, 40);
+
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/crs.png"))); // NOI18N
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton5);
+        jButton5.setBounds(1000, 10, 50, 40);
+
+        jLabel10.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel10.setText("to");
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(730, 240, 30, 17);
-
-        jButton2.setText("jButton1");
-        jPanel1.add(jButton2);
-        jButton2.setBounds(849, 10, 50, 40);
+        jLabel10.setBounds(800, 330, 30, 17);
 
         t3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -127,17 +130,17 @@ public class Com_your_profile extends javax.swing.JFrame {
             }
         });
         jPanel1.add(t3);
-        t3.setBounds(570, 230, 120, 30);
+        t3.setBounds(640, 320, 120, 30);
         jPanel1.add(t4);
-        t4.setBounds(570, 310, 340, 30);
+        t4.setBounds(640, 400, 340, 30);
         jPanel1.add(t5);
-        t5.setBounds(570, 380, 340, 30);
+        t5.setBounds(640, 470, 340, 30);
         jPanel1.add(t6);
-        t6.setBounds(570, 450, 340, 30);
+        t6.setBounds(640, 540, 340, 30);
 
         c1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "A -10 11 Amazon", "A-12 Microsoft" }));
         jPanel1.add(c1);
-        c1.setBounds(580, 160, 320, 30);
+        c1.setBounds(650, 250, 320, 30);
 
         jButton3.setText("SUBMIT");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -146,17 +149,32 @@ public class Com_your_profile extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton3);
-        jButton3.setBounds(490, 650, 110, 50);
+        jButton3.setBounds(500, 690, 110, 50);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 24));
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel2.setText("UNIQUE ID:");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(30, 80, 130, 30);
+        jLabel2.setBounds(50, 100, 130, 30);
 
-        l1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        l1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         l1.setText("324234");
         jPanel1.add(l1);
-        l1.setBounds(180, 80, 170, 30);
+        l1.setBounds(160, 100, 160, 30);
+
+        jLabel11.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Complete Your Profile");
+        jPanel1.add(jLabel11);
+        jLabel11.setBounds(30, 17, 250, 30);
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/tool.jpg"))); // NOI18N
+        jPanel1.add(jLabel12);
+        jLabel12.setBounds(0, -4, 1080, 70);
+
+        jLabel13.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
+        jLabel13.setText("Complete Your Profile");
+        jPanel1.add(jLabel13);
+        jLabel13.setBounds(370, 140, 260, 30);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -166,7 +184,7 @@ public class Com_your_profile extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 730, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 791, Short.MAX_VALUE)
         );
 
         pack();
@@ -217,6 +235,14 @@ catch(Exception e)
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        this.setState(ICONIFIED);        // TODO add your handling code here:
+}//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        System.exit(0);        // TODO add your handling code here:
+}//GEN-LAST:event_jButton5ActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -230,13 +256,14 @@ catch(Exception e)
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox c1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

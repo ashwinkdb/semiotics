@@ -65,6 +65,7 @@ public class Profile extends javax.swing.JFrame {
         jButton7 = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         t1 = new javax.swing.JTextField();
         t2 = new javax.swing.JTextField();
         t3 = new javax.swing.JTextField();
@@ -122,6 +123,11 @@ public class Profile extends javax.swing.JFrame {
         jLabel8.setBounds(100, 460, 340, 30);
 
         jButton2.setText("Update Personal Details");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2);
         jButton2.setBounds(340, 665, 180, 40);
 
@@ -152,6 +158,11 @@ public class Profile extends javax.swing.JFrame {
         jButton4.setBounds(630, 665, 180, 40);
 
         jButton5.setText("Delete My Account");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton5);
         jButton5.setBounds(929, 665, 150, 40);
 
@@ -246,6 +257,15 @@ public class Profile extends javax.swing.JFrame {
         jPanel1.add(jLabel19);
         jLabel19.setBounds(30, 17, 110, 30);
 
+        jButton1.setText("Leave Group");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1);
+        jButton1.setBounds(810, 560, 130, 25);
+
         String uni = ll.getText();
         try{
             Class.forName("java.sql.Driver");
@@ -336,7 +356,7 @@ public class Profile extends javax.swing.JFrame {
         jPanel1.add(t6);
         t6.setBounds(410, 530, 230, 30);
 
-        jLabel12.setFont(new java.awt.Font("Arial", 1, 30)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel12.setText("Profile");
         jPanel1.add(jLabel12);
         jLabel12.setBounds(480, 90, 110, 60);
@@ -395,6 +415,33 @@ this.setVisible(false);
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+String uni=ll.getText();
+delete fr = new delete(uni);
+fr.setVisible(true);
+this.setVisible(false);
+
+// TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+ try{
+            Class.forName("java.sql.Driver");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/traffic", "root", "help");
+            Statement stmt = conn.createStatement();
+            String sql="DELETE from grp WHERE mem1='"+l7.getText()+"' AND  mem2='"+l8.getText()+"' and mem3='"+l9.getText()+"';";
+            stmt.executeUpdate(sql);
+           JOptionPane.showMessageDialog(this, "you had leave group");
+ }
+
+ catch(Exception e)
+ {JOptionPane.showMessageDialog(null, e.getMessage());}// TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -407,6 +454,7 @@ this.setVisible(false);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;

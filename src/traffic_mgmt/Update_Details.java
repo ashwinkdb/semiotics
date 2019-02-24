@@ -51,6 +51,7 @@ l1.setText(para);
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         l1 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -75,7 +76,7 @@ l1.setText(para);
         jPanel1.add(jButton3);
         jButton3.setBounds(720, 10, 50, 40);
         jPanel1.add(t1);
-        t1.setBounds(500, 260, 210, 30);
+        t1.setBounds(500, 280, 210, 30);
 
         jLabel9.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
@@ -91,7 +92,7 @@ l1.setText(para);
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel1.setText("Vehicle reg. no. :");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(180, 260, 193, 29);
+        jLabel1.setBounds(180, 280, 193, 29);
 
         jButton1.setText("Sumbit");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -113,22 +114,31 @@ l1.setText(para);
         jLabel5.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
         jLabel5.setText("For Parking");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(350, 170, 140, 30);
+        jLabel5.setBounds(350, 190, 140, 30);
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
         jLabel6.setText("Update Your Next Month Details");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(240, 140, 370, 30);
+        jLabel6.setBounds(240, 160, 370, 30);
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel7.setText("UNIQUE ID: ");
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(30, 100, 110, 22);
+        jLabel7.setBounds(30, 90, 110, 22);
 
         l1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         l1.setText("T322138979");
         jPanel1.add(l1);
-        l1.setBounds(140, 90, 130, 40);
+        l1.setBounds(140, 80, 130, 40);
+
+        jButton2.setText("BACK");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2);
+        jButton2.setBounds(80, 520, 90, 50);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -168,6 +178,14 @@ l1.setText(para);
         System.exit(0);        // TODO add your handling code here:
 }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        String uni = l1.getText();
+        Profile nw = new Profile(uni);
+        nw.setVisible(true);
+        this.setVisible(false);
+        // TODO add your handling code here:
+}//GEN-LAST:event_jButton2ActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -182,6 +200,7 @@ l1.setText(para);
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox c1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;

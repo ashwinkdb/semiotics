@@ -123,10 +123,10 @@ public class members extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(470, 310, 73, 25);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel3.setText("Find The People Near You !!!");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(390, 130, 237, 22);
+        jLabel3.setBounds(370, 130, 320, 29);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/tool.jpg"))); // NOI18N
         jPanel1.add(jLabel4);
@@ -206,9 +206,10 @@ ResultSet rs=stmt.executeQuery(sql);
 }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-Profile ee = new Profile();
-ee.setVisible(true);
-this.setVisible(false);
+String uni = l1.getText();
+        Profile nw = new Profile(uni);
+        nw.setVisible(true);
+        this.setVisible(false);
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 

@@ -47,6 +47,7 @@ public class Update_bio extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         l1 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -133,6 +134,10 @@ public class Update_bio extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2);
         jButton2.setBounds(70, 390, 90, 50);
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/WhatsApp Image 2019-02-23 at 3.45.38 PM.jpeg"))); // NOI18N
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(0, 60, 1010, 480);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -264,6 +269,7 @@ String uni = l1.getText();
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel8;

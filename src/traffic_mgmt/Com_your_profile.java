@@ -61,6 +61,7 @@ public class Com_your_profile extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,32 +71,32 @@ public class Com_your_profile extends javax.swing.JFrame {
         jPanel1.add(t2);
         t2.setBounds(860, 320, 120, 30);
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel4.setText("Dropping Pincode");
         jPanel1.add(jLabel4);
         jLabel4.setBounds(110, 620, 250, 20);
 
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel5.setText("Company Name");
         jPanel1.add(jLabel5);
         jLabel5.setBounds(110, 250, 250, 30);
 
-        jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel6.setText("Working Timings (HH:MM:SS)");
         jPanel1.add(jLabel6);
         jLabel6.setBounds(110, 320, 350, 40);
 
-        jLabel7.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel7.setText("Vehicle Name");
         jPanel1.add(jLabel7);
         jLabel7.setBounds(110, 400, 160, 20);
 
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel8.setText("Vehicle Registration No.");
         jPanel1.add(jLabel8);
         jLabel8.setBounds(110, 470, 280, 30);
 
-        jLabel9.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel9.setText("Pickup Pincode");
         jPanel1.add(jLabel9);
         jLabel9.setBounds(110, 540, 250, 30);
@@ -119,7 +120,7 @@ public class Com_your_profile extends javax.swing.JFrame {
         jPanel1.add(jButton5);
         jButton5.setBounds(1000, 10, 50, 40);
 
-        jLabel10.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Arial", 1, 14));
         jLabel10.setText("to");
         jPanel1.add(jLabel10);
         jLabel10.setBounds(800, 330, 30, 17);
@@ -151,17 +152,17 @@ public class Com_your_profile extends javax.swing.JFrame {
         jPanel1.add(jButton3);
         jButton3.setBounds(500, 690, 110, 50);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel2.setText("UNIQUE ID:");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(50, 100, 130, 30);
 
-        l1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        l1.setFont(new java.awt.Font("Arial", 1, 18));
         l1.setText("324234");
         jPanel1.add(l1);
         l1.setBounds(160, 100, 160, 30);
 
-        jLabel11.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Arial", 1, 18));
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Complete Your Profile");
         jPanel1.add(jLabel11);
@@ -171,10 +172,14 @@ public class Com_your_profile extends javax.swing.JFrame {
         jPanel1.add(jLabel12);
         jLabel12.setBounds(0, -4, 1080, 70);
 
-        jLabel13.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Arial", 0, 26));
         jLabel13.setText("Complete Your Profile");
         jPanel1.add(jLabel13);
         jLabel13.setBounds(370, 140, 260, 30);
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/WhatsApp Image 2019-02-23 at 3.45.38 PM.jpeg"))); // NOI18N
+        jPanel1.add(jLabel14);
+        jLabel14.setBounds(0, 60, 1080, 730);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -263,6 +268,7 @@ catch(Exception e)
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

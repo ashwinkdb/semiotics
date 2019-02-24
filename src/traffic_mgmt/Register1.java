@@ -54,18 +54,19 @@ public class Register1 extends javax.swing.JFrame {
         t7 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 36));
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 255));
         jLabel1.setText("REGISTER HERE!!!");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(350, 90, 327, 40);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 18));
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel2.setText("For Hassle Free Ghaziabad");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(400, 140, 234, 20);
@@ -73,37 +74,37 @@ public class Register1 extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel3.setText("Employee Name");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(100, 260, 184, 30);
+        jLabel3.setBounds(100, 230, 184, 30);
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel4.setText("Employee ID");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(100, 330, 144, 30);
+        jLabel4.setBounds(100, 300, 144, 30);
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel5.setText("Date Of Birth (YYYY-MM-DD)");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(100, 400, 330, 30);
+        jLabel5.setBounds(100, 370, 330, 30);
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel6.setText("Adress");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(100, 470, 80, 30);
+        jLabel6.setBounds(100, 440, 80, 30);
 
         jLabel7.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel7.setText("Mobile");
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(100, 540, 78, 30);
+        jLabel7.setBounds(100, 510, 78, 30);
 
         jLabel8.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel8.setText("Residence Contact no.");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(100, 610, 259, 30);
+        jLabel8.setBounds(100, 580, 259, 30);
 
         jLabel9.setFont(new java.awt.Font("Arial", 1, 24));
         jLabel9.setText("Email ID");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(100, 680, 95, 30);
+        jLabel9.setBounds(100, 650, 95, 30);
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 24));
         jButton3.setText("Save And Continue");
@@ -113,9 +114,9 @@ public class Register1 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton3);
-        jButton3.setBounds(390, 760, 257, 40);
+        jButton3.setBounds(380, 710, 320, 40);
         jPanel1.add(t1);
-        t1.setBounds(600, 250, 240, 30);
+        t1.setBounds(600, 220, 240, 30);
 
         t2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,7 +124,7 @@ public class Register1 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(t2);
-        t2.setBounds(600, 320, 240, 30);
+        t2.setBounds(600, 290, 240, 30);
 
         t3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,9 +132,9 @@ public class Register1 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(t3);
-        t3.setBounds(600, 390, 240, 30);
+        t3.setBounds(600, 360, 240, 30);
         jPanel1.add(t4);
-        t4.setBounds(600, 460, 240, 30);
+        t4.setBounds(600, 430, 240, 30);
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/crs.png"))); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -160,9 +161,9 @@ public class Register1 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(t5);
-        t5.setBounds(600, 530, 240, 30);
+        t5.setBounds(600, 500, 240, 30);
         jPanel1.add(t6);
-        t6.setBounds(600, 600, 240, 30);
+        t6.setBounds(600, 570, 240, 30);
 
         t7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -170,7 +171,7 @@ public class Register1 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(t7);
-        t7.setBounds(600, 670, 240, 30);
+        t7.setBounds(600, 640, 240, 30);
 
         jLabel11.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
@@ -182,6 +183,10 @@ public class Register1 extends javax.swing.JFrame {
         jPanel1.add(jLabel12);
         jLabel12.setBounds(0, -4, 1040, 70);
 
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/WhatsApp Image 2019-02-23 at 3.45.38 PM.jpeg"))); // NOI18N
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(0, 60, 1040, 730);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -190,7 +195,7 @@ public class Register1 extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 924, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 780, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -265,6 +270,7 @@ this.setVisible(false);
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;

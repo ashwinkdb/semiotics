@@ -38,6 +38,7 @@ public class delete extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         l1 = new javax.swing.JLabel();
         jButton7 = new javax.swing.JButton();
@@ -53,6 +54,7 @@ public class delete extends javax.swing.JFrame {
         ta = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -102,20 +104,23 @@ public class delete extends javax.swing.JFrame {
         jPanel1.add(jLabel2);
         jLabel2.setBounds(190, 190, 400, 20);
 
+        buttonGroup1.add(r3);
         r3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         r3.setText("Other (Specify it)");
         jPanel1.add(r3);
-        r3.setBounds(190, 360, 290, 37);
+        r3.setBounds(190, 360, 240, 37);
 
+        buttonGroup1.add(r2);
         r2.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         r2.setText("Company change");
         jPanel1.add(r2);
-        r2.setBounds(190, 300, 260, 37);
+        r2.setBounds(190, 300, 240, 37);
 
+        buttonGroup1.add(r1);
         r1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         r1.setText("Address change");
         jPanel1.add(r1);
-        r1.setBounds(190, 240, 250, 37);
+        r1.setBounds(190, 240, 240, 37);
 
         ta.setColumns(20);
         ta.setRows(5);
@@ -137,6 +142,10 @@ public class delete extends javax.swing.JFrame {
         jLabel4.setText("(once you click submit , your account cant be recovered)");
         jPanel1.add(jLabel4);
         jLabel4.setBounds(300, 560, 340, 16);
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/traffic_mgmt/WhatsApp Image 2019-02-23 at 3.45.38 PM.jpeg"))); // NOI18N
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(0, 60, 910, 570);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -196,6 +205,7 @@ catch(Exception w)
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
@@ -204,6 +214,7 @@ catch(Exception w)
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel l1;

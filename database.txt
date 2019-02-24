@@ -1,0 +1,28 @@
+CREATE database traffic;
+use traffic; 
+CREATE TABLE `grp` (
+  `grp_no` int(11) DEFAULT NULL,
+  `mem1` varchar(20) DEFAULT NULL,
+  `mem2` varchar(20) DEFAULT NULL,
+  `mem3` varchar(20) DEFAULT NULL,
+  `veh_no` varchar(30) DEFAULT NULL,
+  `comp` varchar(260) DEFAULT NULL
+);
+ CREATE TABLE `register` (
+  `emp` varchar(60) DEFAULT NULL,
+  `id` varchar(40) DEFAULT NULL,
+  `compa` varchar(260) DEFAULT NULL,
+  `st_time` time DEFAULT NULL,
+  `en_time` time DEFAULT NULL,
+  `pick` int(11) DEFAULT NULL,
+  `dro` int(11) DEFAULT NULL,
+  `gmai` varchar(40) DEFAULT NULL,
+  `veh_no` varchar(40) DEFAULT NULL,
+  `veh_name` varchar(50) DEFAULT NULL,
+  `uni_id` varchar(20) DEFAULT NULL,
+  `addr` varchar(100) DEFAULT NULL,
+  `mob` mediumtext,
+  `res_mob` mediumtext,
+  `pass` varchar(50) DEFAULT NULL,
+  `dob` date DEFAULT NULL
+);
